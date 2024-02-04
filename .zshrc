@@ -105,10 +105,10 @@ alias forth="gforth"
 ## adding vim to the terminal
 bindkey -v
 # adding to path point to the folder not the executable (update within the "")
-export PATH="/home/mac/zig/zig-linux-x86_64-0.11.0":$PATH
+export PATH=$PATH:~/zig/zig-linux-x86_64-0.11.0
 
-export PATH="/home/mac/odin/odin-ubuntu-amd64-dev-2024-01":$PATH
+export PATH=$PATH:~/odin/odin-ubuntu-amd64-dev-2024-01
 
 # adding vim as the default viewer for man pages
-export MANPAGER="/bin/sh -c \"col -b | vim -c 'set ft=man ts=8 nomod nolist nonu noma' -\""
+# export MANPAGER="/bin/sh -c \"col -b | vim -c 'set ft=man ts=8 nomod nolist nonu noma' -\""
 
