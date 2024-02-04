@@ -1,0 +1,31 @@
+# allow links to be opened from inside newsboat articles
+external-url-viewer "urlview"
+browser "firefox %u"
+bind-key U show-urls
+
+# MACRO IS "," BY DEFAULT RTFM 
+
+# allows youtube videos to be downloaded from within newsboat
+macro v set browser "yt-dlp -o '~/youtube/%(channel)s/%(title)s.%(ext)s'"; open-in-browser ; set browser "elinks %u"
+
+# unbind keys
+unbind-key ENTER
+unbind-key j
+unbind-key k
+unbind-key J
+unbind-key K
+
+# bind keys - vim style
+bind-key j down
+bind-key k up
+bind-key l open
+bind-key h quit
+
+# colors
+#color background          white   default
+#color listnormal          white   default
+#color listnormal_unread   magenta default bold
+#color listfocus           color14 color208 bold
+#color listfocus_unread    color14 color208 bold
+#color info                green   color0
+#color article             white   default
