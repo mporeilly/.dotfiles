@@ -107,7 +107,11 @@ bindkey -v
 # adding to path point to the folder not the executable (update within the "")
 export PATH=$PATH:~/zig/zig-linux-x86_64-0.11.0
 
+export PATH=$PATH:~/nvim-linux64/bin
+
 export PATH=$PATH:~/odin/odin-ubuntu-amd64-dev-2024-01
+
+export PATH=$PATH:~/.local/bin
 
 # adding vim as the default viewer for man pages
 # export MANPAGER="/bin/sh -c \"col -b | vim -c 'set ft=man ts=8 nomod nolist nonu noma' -\""
